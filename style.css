@@ -39,6 +39,9 @@ nav{
     font-family: 'Merriweather Sans', sans-serif;
     
 }
+.nav-top button:hover{
+    scale: 1.5;
+}
 .nav-top svg{
   
     justify-content: center;
@@ -73,10 +76,18 @@ nav{
   font-family: 'Merriweather Sans', sans-serif;
   display: flex;
   cursor: pointer;
+  padding: 16px;
+  border-radius: 24px;
+}
+.nav-bottom a:hover{
+    background-color: #121111;
+    color: #fff;
 
+    
 }
 .nav-bottom a img{
     margin-right: 16px;
+    
 }
 .card-ad-container{
     display: flex;
@@ -99,6 +110,9 @@ nav{
     justify-content: space-between;
    
 }
+.left-ad:hover, .right-top-ad:hover,.right-bot-ad:hover{
+    scale:1.5;
+}
 .right-top-ad img {
     border-radius: 16px;
     cursor: pointer;
@@ -110,13 +124,20 @@ nav{
 .text-area{
     text-align: center;
     padding: 36px 0;
+    position:relative;
+    white-space: nowrap;
+
     
 }
 .text-area span{
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: "Pacifico", cursive;
     color:red ;
     text-align: center;
-    
+    transition: transform 0.5s;
+
+}
+.text-area:hover span {
+    transform: translateY(-100%);
 }
 .text-area h3{
     font-family: 'Merriweather Sans', sans-serif;
@@ -163,10 +184,26 @@ nav{
     
     border-radius: 16px;
     padding: 12px;
+    transition: transform 2s;
+}
+.product>h3:hover{
+    color: red;
+    transform: scale(1.5);
+
+    
 }
 .product img{
     height: 360px;
     width :360px;
+    transition: transform 1s;
+    border-radius: 50%;
+}
+.rotate-img{
+    transform-origin: center;
+    
+}
+.product:hover .rotate-img {
+    transform: rotate(360deg); /* Döndürme açısı */
 }
 .product h3{
     margin :16px;
