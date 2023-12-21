@@ -61,7 +61,7 @@ nav{
 }
 .nav-bottom{
     display: flex;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 16px 0px;
@@ -69,14 +69,17 @@ nav{
     text-align: center;
     gap: 64px;
     background-color: #fff;
+  
+    flex-wrap: nowrap;
 }
 .nav-bottom a{
-  align-items: center;
+ display: flex;
+ align-items: center;
   font-weight: 400;
   font-family: 'Merriweather Sans', sans-serif;
-  display: flex;
+
   cursor: pointer;
-  padding: 16px;
+  padding: 8px;
   border-radius: 24px;
 }
 .nav-bottom a:hover{
